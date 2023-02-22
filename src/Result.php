@@ -21,13 +21,13 @@ readonly class Result
     protected function prettify(): string
     {
         if ($this->seconds > 1) {
-            return sprintf("%.2fs", $this->seconds);
+            return sprintf("%.2f s", $this->seconds);
         }
 
         if ($this->milliseconds > 1) {
-            return sprintf("%.2fms", $this->milliseconds);
+            return sprintf("%.2f ms", $this->milliseconds);
         }
 
-        return sprintf("%.2fus", $this->microseconds);
+        return sprintf("%.2f us", $this->microseconds);
     }
 }

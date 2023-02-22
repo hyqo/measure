@@ -32,8 +32,8 @@ class MeasureTest extends TestCase
             'baz' => $baz,
         ], Measure::getResults());
 
-        $this->assertMatchesRegularExpression('/\d+\.\d+us/',(string)$foo);
-        $this->assertMatchesRegularExpression('/\d+\.\d+ms/',(string)$bar);
-        $this->assertMatchesRegularExpression('/\d+\.\d+s/',(string)$baz);
+        $this->assertMatchesRegularExpression('/\d+\.\d+ us/',(string)$foo);
+        $this->assertMatchesRegularExpression('/\d+\.\d+ ms/',(string)$bar);
+        $this->assertMatchesRegularExpression('/\d+\.\d+ s/',(string)$baz);
     }
 }
