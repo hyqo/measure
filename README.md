@@ -15,6 +15,7 @@ composer require hyqo/measure
 ```php
 Measure::start('foo');
 Measure::start('bar');
+Measure::start('baz');
 
 usleep(100);
 echo Measure::stop('foo'); // 100.00 us
@@ -23,5 +24,5 @@ usleep(100);
 echo Measure::stop('bar'); // 200.00 us
 
 usleep(800);
-echo Measure::stop('bar'); // 1.00 ms
+echo Measure::stop('baz'); // 1.00 ms
 ```
