@@ -1,5 +1,5 @@
 {
-    "name": "hyqo/",
+    "name": "hyqo/measure",
     "description": "",
     "keywords": [
     ],
@@ -14,16 +14,16 @@
         "php": "^8.2"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^10.0"
     },
     "autoload": {
         "psr-4": {
-            "Hyqo\\\\": "src"
+            "Hyqo\\Measure\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Hyqo\\\\Test\\": "tests"
+            "Hyqo\\Measure\\Test\\": "tests"
         }
     }
 }
