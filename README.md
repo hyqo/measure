@@ -22,5 +22,6 @@ echo Measure::stop('foo'); // 100.00us
 usleep(100);
 echo Measure::stop('bar'); // 200.00us
 
-Measure::getResults(); // ['foo'=>'100.00us','bar'=>'200.00us']
+usleep(800);
+echo Measure::stop('bar'); // 1.00ms
 ```
